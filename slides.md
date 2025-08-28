@@ -1,31 +1,20 @@
 ---
+# https://sli.dev/custom/
 # You can also start simply with 'default'
-theme: default
+theme: apple-basic
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 # background: https://cover.sli.dev
 # favicon, can be a local file path or URL
-favicon: '/favicons/favicon-32x32.png'
+favicon: "/favicons/favicon-32x32.png"
 # force color schema for the slides, can be 'auto', 'light', or 'dark'
-colorSchema: light
-# aspect ratio for the slides
-aspectRatio: 16/9
-# real width of the canvas, unit in px
-canvasWidth: 980
+colorSchema: dark
 # some information about your slides (markdown enabled)
-title: Espressif
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# apply unocss classes to the current slide
-class: text-center
 # https://sli.dev/features/drawing
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
+transition: fade-out
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 # open graph
@@ -34,23 +23,24 @@ mdc: true
 # Config required for slidev-component-poll addon
 pollSettings:
   anonymous: true
+layout: intro-image
+image: "https://cover.sli.dev"
+title: "Presentation title"
 ---
 
-# Talk title goes here
 
-<span style="font-size: 2rem;">Optional subtitle</span>
-
-<div style="position: absolute; bottom: 2rem; left: 0; width: 100%; text-align: center;">
-  Your name<br>
-  <span style="font-size: 0.8rem; display: inline-block;">YYYY-MM-DD</span>
+<div class="absolute bottom-30">
+  <h1>Presentation title</h1>
+  <p>Presentation subtitle</p>
+  <span class="font-700">
+    Author and Date
+  </span>
 </div>
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
+<!-- 
+Commnents are the presenters notes
+ -->
 
----
-transition: fade-out
 ---
 
 # What is Slidev?
