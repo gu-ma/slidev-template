@@ -10,6 +10,18 @@
       z-index: 9999;
     "
   >
-    <img src="/espressif-logos/Espressif_Standard_Logo_EN_Horizontal_Black.svg" alt="Espressif Logo" style="width: 100%;" />
+    <img class="logo" src="/hslu-logos/logo.svg" alt="HSLU Logo" style="width: 100%;" />
   </header>
 </template>
+
+<style>
+/* Default: no filter */
+.logo {
+  filter: none;
+}
+
+/* When dark mode is active */
+.dark .logo {
+  filter: invert(1);
+}
+</style>
