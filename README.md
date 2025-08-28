@@ -1,7 +1,8 @@
 <!-- omit in toc -->
-# slidev-esp-template
 
-This project is a template for [Slidev](https://github.com/slidevjs/slidev) presentations recommended for use at [Espressif](https://www.espressif.com/).
+# slidev-template
+
+This project is a template for [Slidev](https://github.com/slidevjs/slidev) presentations 
 
 You can jump to:
 
@@ -32,13 +33,11 @@ The template is based on the Slidev [Getting Started](https://sli.dev/guide/) pr
   - [@olzhas-adiyatov/slidev-addon-asciinema](https://www.npmjs.com/package/@olzhas-adiyatov/slidev-addon-asciinema)
   - [slidev-addon-sync](https://github.com/Smile-SA/slidev-addon-sync)
   - [Poll and Quiz](https://github.com/Smile-SA/slidev-component-poll)
-- **Layout**: Espressif logo added.
 - **Slide content**:
-  - Replaced Slidev Getting Started title page with a usual Espressif title page
-  - Changed guidelines in *Themes*
-  - Added a slide *Asciinema* describing this plugin
-  - Added a slide *Poll and Quiz* describing this plugin
-
+  - Replaced Slidev Getting Started title page with a usual title page
+  - Changed guidelines in _Themes_
+  - Added a slide _Asciinema_ describing this plugin
+  - Added a slide _Poll and Quiz_ describing this plugin
 
 ## Installation and configuration
 
@@ -54,39 +53,38 @@ Slidev requires `Node.js`, which can be conveniently installed using [nvm](https
 
 ```sh
 # Install nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 source ~/.nvm/nvm.sh
 # Install Node.js (LTS version includes npm)
 nvm install --lts
 ```
-
 
 ### Template setup
 
 To create your presentation:
 
 1. On the GitHub repo page, click **Use this template** in the top-right corner.
-    - This creates a new repo under your GitHub account with the contents of `slidev-esp-template`.
+   - This creates a new repo under your GitHub account with the contents of `slidev-template`.
 2. Clone your new repo:
-    ```sh
-    git clone https://github.com/YOUR_USERNAME/slidev-esp-template.git
-    cd ~/path/to/slidev-esp-template/
-    ```
+   ```sh
+   git clone https://github.com/YOUR_USERNAME/slidev-template.git
+   cd ~/path/to/slidev-template/
+   ```
 3. Install project dependencies:
-    ```sh
-    npm install
-    ```
+   ```sh
+   npm install
+   ```
 4. (Optional but recommended) Set up your environment to use Slidev globally:
-    ```sh
-    # Install pnpm globally (recommended over npm for faster installs and disk efficiency)
-    npm install -g pnpm
-    # Create a global bin directory and add it to your shell's PATH
-    pnpm setup
-    # Restart your shell
-    # Install the Slidev CLI globally
-    pnpm add -g @slidev/cli
-    ```
-    💡 If you prefer not to install anything globally, you can run Slidev using `npm run dev`.
+   ```sh
+   # Install pnpm globally (recommended over npm for faster installs and disk efficiency)
+   npm install -g pnpm
+   # Create a global bin directory and add it to your shell's PATH
+   pnpm setup
+   # Restart your shell
+   # Install the Slidev CLI globally
+   pnpm add -g @slidev/cli
+   ```
+   💡 If you prefer not to install anything globally, you can run Slidev using `npm run dev`.
 
 ## Usage
 
@@ -100,16 +98,8 @@ Edit the [slides.md](./slides.md) to see the changes.
 During your talk, you can:
 
 - Use a websocket in the LAN by running `slidev --remote=<password> --host=0.0.0.0`<br>
-OR
+  OR
 - Use a workflow to build and [Deploy Slidev to GitHub Pages](https://github.com/igrr/esb24/blob/main/.github/workflows/deploy.yml)
-
-
-### Examples of Slidev presentations
-
-- Espressif:
-  - [DevCon23 - Developing, Publishing, and Maintaining Components for ESP-IDF](https://www.youtube.com/watch?v=D86gQ4knUnc) (YouTube)
-  - [ESP-IDF and Tools Overview](https://github.com/igrr/esb24/) (GitHub)
-- [Slidev Showcases](https://sli.dev/resources/showcases)
 
 ## Learn more about Slidev
 
@@ -143,7 +133,7 @@ The most basic and important features:
   ---
   layout: two-cols
   ---
-   ```
+  ```
 - **Simplify content reuse**: If you plan to reuse certain slides or sections in other Slidev presentations, you can place this content in separate markdown files inside the `pages/` folder, for example `pages/content.md`. To include them into your main `slides.md`, use:
   ```markdown
   ---
@@ -164,7 +154,6 @@ The most basic and important features:
 - **Visualize data with D3**: You can use [D3.js](https://d3js.org/) to create complex diagrams and visualizations by creating a [component](https://sli.dev/guide/component).
 - **Use TailwindCSS for advanced formatting**: TailwindCSS is already used in Vite (upon which Slidev is built). It can help create more advanced layouts, e.g., [columns](https://tailwindcss.com/docs/columns) or [grid](https://tailwindcss.com/docs/grid-template-columns).
 
-
 ## Addons
 
 ### Asciinema
@@ -177,7 +166,7 @@ The asciinema player's [options](https://docs.asciinema.org/manual/player/option
 <Asciinema src="casts/demo.cast" :playerProps="{speed: 2, rows: 13}"/>
 ```
 
-See a usage example in [slides.md](./slides.md#asciinema) > *Asciinema*.
+See a usage example in [slides.md](./slides.md#asciinema) > _Asciinema_.
 
 #### Window resizing issue
 
@@ -203,7 +192,6 @@ slidev --remote=<password>
 
 This command will return the links for the presenter and attendees.
 
-
 #### Troubleshooting
 
 If slide syncing doesn't work, make sure that:
@@ -213,10 +201,9 @@ If slide syncing doesn't work, make sure that:
 - The presenter's and attendee's devices are connected to the same network.
 - The device's OS does not block access to the LAN due to the use of VPN clients, etc.
 
-
 ### Poll and Quiz
 
-See a usage example in [slides.md](./slides.md#poll-and-quiz) > *Poll and Quiz*.
+See a usage example in [slides.md](./slides.md#poll-and-quiz) > _Poll and Quiz_.
 
 ## Layout and appearance
 
@@ -228,7 +215,7 @@ See a usage example in [slides.md](./slides.md#poll-and-quiz) > *Poll and Quiz*.
 
 ### Update logo
 
-If the slides are for an event that has its own logo (for example, DevCon25), consider replacing the standard Espressif logo with the event-specific logo.
+If the slides are for an event that has its own logo consider replacing the standard logo with the event-specific logo.
 
 To update the logo, follow these steps:
 
