@@ -9,6 +9,10 @@ theme: apple-basic
 favicon: "/favicons/favicon-32x32.png"
 # force color schema for the slides, can be 'auto', 'light', or 'dark'
 colorSchema: auto
+# global fonts
+fonts:
+  sans: IBM Plex Mono
+  mono: IBM Plex Mono
 # some information about your slides (markdown enabled)
 # https://sli.dev/features/drawing
 drawings:
